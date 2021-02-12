@@ -28,6 +28,5 @@ def open_map():
         print(pc.paste())
 
 
-# content > div > div > div.left-layout__main > form > div:nth-child(3) > ul > li:nth-child(1) > a
 if __name__ == "__main__":
     main()
