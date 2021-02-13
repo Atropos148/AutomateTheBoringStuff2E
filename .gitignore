@@ -4,3 +4,6 @@ AutomateTheBoringStuff2E.code-workspace
 pyvenv.cfg
 Romeo.txt
 example.html
+Include/site/python3.8/greenlet/greenlet.h
+output/google_news_result_opener.exe
+__pycache__/google_news_result_opener.cpython-38.pyc

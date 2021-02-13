@@ -10,9 +10,15 @@ def main():
 
     search_url: List = ["https://www.google.com/search?q=", "&tbm=nws"]
 
-    if len(sys.argv) == 2:
-        topic_name: str = sys.argv[1]
+    # if len(sys.argv) == 2:
+    #     topic_name: str = sys.argv[1]
 
+    while True:
+        topic_name = input("What do you want to search? > ")
+        if topic_name == 'exit':
+            break
+
+        print("Opening: " + (search_url[0]+topic_name+search_url[1]))
         res = requests.get(search_url[0]+topic_name+search_url[1])
         res.raise_for_status()
 
