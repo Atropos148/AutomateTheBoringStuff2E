@@ -7,3 +7,4 @@ example.html
 Include/site/python3.8/greenlet/greenlet.h
 output/google_news_result_opener.exe
 __pycache__/google_news_result_opener.cpython-38.pyc
+xkcd/
