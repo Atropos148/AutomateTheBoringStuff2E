@@ -81,7 +81,11 @@ def main():
     editor.send_keys('Programming')
     editor.send_keys(Keys.ENTER, Keys.TAB)
 
-    editor.send_keys("Python", Keys.CONTROL, Keys.SHIFT, Keys.LEFT)
+    editor.send_keys("Python")
+    editor.send_keys(Keys.ENTER, "Java")
+    editor.send_keys(Keys.UP, Keys.CONTROL, Keys.RIGHT)
+
+    editor.send_keys(Keys.CONTROL, Keys.SHIFT, Keys.LEFT)
     bold_button.click()
     editor.send_keys(Keys.RIGHT, Keys.RIGHT, Keys.RIGHT)
     editor.send_keys(
@@ -90,6 +94,29 @@ def main():
 
     editor.send_keys(
         'Solutions can be seen on my Github: https://github.com/Atropos148/AutomateTheBoringStuff')
+    editor.send_keys(Keys.ENTER)
+
+    editor.send_keys(
+        "I'm now working on refreshing my memory with the Web Automation chapter, that can be seen here: https://github.com/Atropos148/AutomateTheBoringStuff2E")
+    editor.send_keys(Keys.ENTER)
+
+    editor.send_keys(
+        "Solved about 15 days from Advent of Code 2020 (at least so far)")
+    editor.send_keys(Keys.ENTER, Keys.TAB)
+    editor.send_keys(
+        "Solutions can be seen here: https://github.com/Atropos148/AdventOfCode2020")
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys("This repo has the most branches I ever used")
+
+    editor.send_keys(Keys.DOWN, Keys.CONTROL, Keys.RIGHT)
+    editor.send_keys(Keys.CONTROL, Keys.SHIFT, Keys.LEFT)
+    bold_button.click()
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(
+        " - I am currently working thru assignments that are interesting to me from here http://programmingbydoing.com/")
+    editor.send_keys(Keys.ENTER, Keys.TAB)
+    editor.send_keys(
+        "Solutions can be seen here: https://github.com/Atropos148/Programming-by-Doing")
 
     time.sleep(1000)
 
