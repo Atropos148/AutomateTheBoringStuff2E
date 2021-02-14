@@ -65,10 +65,11 @@ def main():
     editor.send_keys(Keys.ENTER)
     editor.send_keys('Twitter: https://twitter.com/Atropos148')
     editor.send_keys(Keys.ENTER)
-    editor.send_keys(Keys.BACKSPACE, Keys.BACKSPACE)
+    editor.send_keys(Keys.BACKSPACE, Keys.BACKSPACE, Keys.BACKSPACE)
     time.sleep(.3)
 
     print("Some programming stuff now...")
+    editor.send_keys(Keys.ENTER)
     editor.send_keys("## Skills")
     editor.send_keys(Keys.ENTER)
     unordered_list_button.click()
@@ -117,6 +118,26 @@ def main():
     editor.send_keys(Keys.ENTER, Keys.TAB)
     editor.send_keys(
         "Solutions can be seen here: https://github.com/Atropos148/Programming-by-Doing")
+
+    editor.send_keys(Keys.ENTER, Keys.BACKSPACE, Keys.BACKSPACE)
+    editor.send_keys(Keys.CONTROL, Keys.LEFT, Keys.ENTER)
+    editor.send_keys("## Education")
+    print('Next up: Education')
+
+    editor.send_keys(Keys.ENTER)
+    unordered_list_button.click()
+    bold_button.click()
+    editor.send_keys("SPŠE Zochova 9, Bratislava")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(Keys.ENTER, Keys.TAB)
+    editor.send_keys("Odbor: Informačné a sieťové technológie")
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys("2010 - 2014")
+
+    editor.send_keys(Keys.ENTER, Keys.BACKSPACE, Keys.BACKSPACE)
+    editor.send_keys(Keys.CONTROL, Keys.LEFT, Keys.ENTER)
+    editor.send_keys("## Work Experience")
+    print('And now...Work Experience')
 
     time.sleep(1000)
 
