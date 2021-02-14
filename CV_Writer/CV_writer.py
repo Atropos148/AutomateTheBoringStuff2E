@@ -234,7 +234,7 @@ def main():
     editor.send_keys(Keys.CONTROL, Keys.DOWN)
     editor.send_keys(Keys.CONTROL, Keys.DOWN)
     editor.send_keys(Keys.END)
-    editor.send_keys(Keys.CONTROL, Keys.DOWN)
+    editor.send_keys(Keys.DOWN)
     editor.send_keys(Keys.END)
 
     editor.send_keys(Keys.ENTER, Keys.TAB)
