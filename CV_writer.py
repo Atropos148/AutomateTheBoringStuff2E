@@ -90,7 +90,7 @@ def main():
     bold_button.click()
     editor.send_keys(Keys.RIGHT, Keys.RIGHT, Keys.RIGHT)
     editor.send_keys(
-        " - I finished almost all assignments from https://automatetheboringstuff.com/k")
+        " - I finished almost all assignments from https://automatetheboringstuff.com/")
     editor.send_keys(Keys.END, Keys.ENTER, Keys.TAB)
 
     editor.send_keys(
@@ -138,6 +138,100 @@ def main():
     editor.send_keys(Keys.CONTROL, Keys.LEFT, Keys.ENTER)
     editor.send_keys("## Work Experience")
     print('And now...Work Experience')
+
+    editor.send_keys(Keys.ENTER)
+    unordered_list_button.click()
+
+    bold_button.click()
+    editor.send_keys("Botel Pressburg, Bratislava")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(Keys.ENTER)
+
+    bold_button.click()
+    editor.send_keys("Hotel pod Lipou, Modra")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(Keys.ENTER)
+
+    bold_button.click()
+    editor.send_keys("Soitron, Bratislava")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+
+    editor.send_keys(Keys.UP, Keys.UP, Keys.END)
+
+    editor.send_keys(Keys.ENTER, Keys.TAB)
+    bold_button.click()
+    editor.send_keys("Night shift receptionist")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys("November 2016 - November 2017")
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys(
+        "I worked only night shifts, predictable work plan of 3 days on, 3 days off")
+
+    editor.send_keys(Keys.DOWN, Keys.END)
+    editor.send_keys(Keys.ENTER, Keys.TAB)
+    bold_button.click()
+    editor.send_keys("Receptionist")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys("November 2017 - February 2018")
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys(
+        "I worked night shifts and day shifts, including everyday contact with the guests")
+
+    editor.send_keys(Keys.DOWN, Keys.END)
+    editor.send_keys(Keys.ENTER, Keys.TAB)
+    bold_button.click()
+    editor.send_keys("Service Desk Operator")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys("February 2018 - Now")
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys("Work of SD Operator includes")
+
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys(
+        "SD is working 24/7, so work includes 8-hour and 12-hour shifts")
+    editor.send_keys(Keys.UP, Keys.UP, Keys.END)
+
+    editor.send_keys(Keys.ENTER, Keys.TAB)
+    bold_button.click()
+    editor.send_keys("handling emails")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(" from customers")
+    editor.send_keys(Keys.ENTER)
+
+    bold_button.click()
+    editor.send_keys("handling phone calls")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(" from customers")
+    editor.send_keys(Keys.ENTER)
+
+    editor.send_keys(
+        "creating and assigning incident or request tickets to correct engineers")
+
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys(
+        "“correct engineers”, as in responsible for given technology and/or customer AND currently on shift")
+
+    editor.send_keys(Keys.CONTROL, Keys.UP)
+    editor.send_keys(Keys.END)
+    editor.send_keys(Keys.ENTER, Keys.TAB)
+    editor.send_keys("Soitron uses ")
+    bold_button.click()
+    editor.send_keys("iTop")
+    editor.send_keys(Keys.RIGHT, Keys.RIGHT)
+    editor.send_keys(" as their ticketing tool")
+
+    editor.send_keys(Keys.CONTROL, Keys.DOWN)
+    editor.send_keys(Keys.CONTROL, Keys.DOWN)
+    editor.send_keys(Keys.END)
+
+    editor.send_keys(Keys.ENTER, Keys.TAB)
+    editor.send_keys("I worked both of those for the first year")
+    editor.send_keys(Keys.ENTER)
+    editor.send_keys(
+        "Only worked 8 hour day shifts the second year, because of health reasons")
 
     time.sleep(1000)
 
