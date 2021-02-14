@@ -5,6 +5,7 @@ pyvenv.cfg
 Romeo.txt
 example.html
 Include/site/python3.8/greenlet/greenlet.h
-output/google_news_result_opener.exe
+output/
 __pycache__/google_news_result_opener.cpython-38.pyc
 xkcd/
+CV_Writer/__pycache__/CV_writer.cpython-38.pyc

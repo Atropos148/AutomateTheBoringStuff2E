@@ -1,15 +1,23 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
+import os
+import pathlib
+from inspect import getframeinfo, currentframe
+
 import time
 
 
 def main():
-    browser = webdriver.Edge('msedgedriver.exe')
+    edge_driver = os.path.dirname(os.path.abspath(
+        getframeinfo(currentframe()).filename))
+
+    browser = webdriver.Edge(
+        executable_path=edge_driver + os.sep + "msedgedriver.exe")
+
     browser.get('https://stackedit.io/')
     browser.implicitly_wait(10)
 
-    # try:
     time.sleep(2)
     write_button = browser.find_element_by_css_selector(
         'a.navigation-bar__button')
@@ -226,6 +234,8 @@ def main():
     editor.send_keys(Keys.CONTROL, Keys.DOWN)
     editor.send_keys(Keys.CONTROL, Keys.DOWN)
     editor.send_keys(Keys.END)
+    editor.send_keys(Keys.CONTROL, Keys.DOWN)
+    editor.send_keys(Keys.END)
 
     editor.send_keys(Keys.ENTER, Keys.TAB)
     editor.send_keys("I worked both of those for the first year")
@@ -234,9 +244,6 @@ def main():
         "Only worked 8 hour day shifts the second year, because of health reasons")
 
     time.sleep(1000)
-
-    # except Exception:
-    #     print("I didn't find an element with that name")
 
 
 if __name__ == "__main__":
